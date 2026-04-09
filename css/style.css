@@ -9678,14 +9678,24 @@ textarea.form-control {
    Add this at the bottom of css/style.css
    ========================= */
 
+/* Smooth anchor scroll */
+html {
+    scroll-behavior: smooth;
+}
+
 /* Base */
 body {
     color: #222;
     word-break: keep-all;
+    background: #fff;
 }
 
 a {
     transition: all 0.2s ease;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /* Hero */
@@ -9816,9 +9826,16 @@ a {
     padding-left: 0;
 }
 
+#navi ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
 #navi ul li a {
+    display: block;
     font-weight: 600;
     color: #444;
+    padding: 6px 0;
 }
 
 #navi ul li a:hover {
@@ -9865,7 +9882,12 @@ a {
     line-height: 1.8;
 }
 
-/* Project action buttons */
+/* Anchor target spacing */
+#project-codebento {
+    scroll-margin-top: 110px;
+}
+
+/* Project / external buttons */
 .btn.btn-outline-secondary.btn-sm {
     margin-right: 0.35rem;
     margin-bottom: 0.35rem;
@@ -9895,7 +9917,6 @@ a {
 .ftco-project .project:hover {
     transform: translateY(-4px);
     box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
-    text-decoration: none;
 }
 
 .ftco-project .project .overlay {
