@@ -9672,33 +9672,73 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
 /* =========================
-   Custom overrides for portfolio
+   Custom overrides for Choi DongUk Portfolio
+   Add this at the bottom of css/style.css
    ========================= */
+
+/* Base */
+body {
+    color: #222;
+    word-break: keep-all;
+}
+
+a {
+    transition: all 0.2s ease;
+}
 
 /* Hero */
 .hero-wrap .overlay {
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.hero-wrap .slider-text {
+    position: relative;
+    z-index: 2;
 }
 
 .hero-wrap .text .subheading,
 .hero-wrap .text h1,
 .hero-wrap .text h2,
 .hero-wrap .text p {
-    color: #fff !important;
+    text-shadow: none !important;
 }
 
-.hero-wrap .text h1,
-.hero-wrap .text h2,
-.hero-wrap .text p {
-    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+.hero-wrap .text .subheading {
+    color: #111 !important;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.hero-wrap .text h1 {
+    color: #111 !important;
+    font-size: 4rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.hero-wrap .text h2 {
+    color: #111 !important;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1.25rem;
 }
 
 .hero-wrap .text p {
+    color: #222 !important;
     max-width: 760px;
     margin-left: auto;
     margin-right: auto;
     font-weight: 500;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+/* Navbar */
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-weight: 600;
 }
 
 /* About */
@@ -9724,39 +9764,87 @@ textarea.form-control {
 #about-section .heading-section p {
     color: #444;
     line-height: 1.9;
+    font-size: 1rem;
+}
+
+#about-section .about-info {
+    margin-top: 1.5rem;
+}
+
+#about-section .about-info li {
+    margin-bottom: 8px;
 }
 
 #about-section .about-info li span:first-child {
     min-width: 110px;
-    font-weight: 600;
-    color: #000;
+    font-weight: 700;
+    color: #111;
 }
 
 #about-section .about-info li span:last-child {
     color: #555;
 }
 
-/* Remove visual gap after About */
+#about-section .btn-primary {
+    border-radius: 999px;
+    padding: 0.85rem 1.4rem;
+    font-weight: 600;
+}
+
+/* Section spacing */
 #resume-section {
     padding-top: 4rem;
 }
 
-/* Resume section */
-#resume-section .heading {
-    margin-bottom: 2rem;
+#notion-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #fafafa;
 }
 
+/* Headings */
+.heading-section .big {
+    opacity: 0.08;
+}
+
+.heading-section h2 {
+    font-weight: 800;
+}
+
+/* Left nav in resume */
+#navi ul {
+    padding-left: 0;
+}
+
+#navi ul li a {
+    font-weight: 600;
+    color: #444;
+}
+
+#navi ul li a:hover {
+    color: #3f66f2;
+}
+
+/* Resume cards */
 .resume-wrap {
     border-left: 3px solid #3f66f2;
-    padding-left: 1rem;
-    margin-bottom: 2rem;
+    padding: 1rem 1rem 1rem 1.2rem;
+    margin-bottom: 1.8rem;
     background: #fff;
     border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.resume-wrap .icon {
+    min-width: 56px;
+    width: 56px;
+    height: 56px;
 }
 
 .resume-wrap .text h2 {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
     font-weight: 700;
+    color: #111;
 }
 
 .resume-wrap .position {
@@ -9767,20 +9855,36 @@ textarea.form-control {
 }
 
 .resume-wrap .date {
-    font-weight: 600;
+    font-weight: 700;
     color: #666;
 }
 
-/* Project buttons */
+.resume-wrap .text p,
+.resume-wrap .text div {
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Project action buttons */
 .btn.btn-outline-secondary.btn-sm {
     margin-right: 0.35rem;
     margin-bottom: 0.35rem;
     border-radius: 999px;
-    padding: 0.35rem 0.8rem;
+    padding: 0.38rem 0.85rem;
     font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.btn.btn-outline-secondary.btn-sm:hover {
+    text-decoration: none;
 }
 
 /* Project gallery */
+.ftco-project {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 .ftco-project .project {
     min-height: 320px;
     background-size: cover !important;
@@ -9791,6 +9895,7 @@ textarea.form-control {
 .ftco-project .project:hover {
     transform: translateY(-4px);
     box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
+    text-decoration: none;
 }
 
 .ftco-project .project .overlay {
@@ -9803,18 +9908,22 @@ textarea.form-control {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
 }
 
-/* Notion section */
-#notion-section {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background: #fafafa;
-}
-
+/* Notion */
 #notion-section .heading-section p {
     color: #555;
 }
 
-/* Contact cards */
+/* Hire section */
+.ftco-hireme .overlay {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.ftco-hireme h2,
+.ftco-hireme p {
+    color: #fff;
+}
+
+/* Contact */
 .contact-info .box {
     border-radius: 10px;
 }
@@ -9830,7 +9939,22 @@ textarea.form-control {
     word-break: break-word;
 }
 
+/* Footer */
+.ftco-footer {
+    padding: 2rem 0;
+}
+
 /* Mobile */
+@media (max-width: 991.98px) {
+    .hero-wrap .text h1 {
+        font-size: 3rem;
+    }
+
+    .hero-wrap .text h2 {
+        font-size: 1.25rem;
+    }
+}
+
 @media (max-width: 767.98px) {
     #about-section .img-about .img {
         width: 220px !important;
@@ -9843,10 +9967,18 @@ textarea.form-control {
     }
 
     .hero-wrap .text h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .hero-wrap .text p {
+        font-size: 0.95rem;
     }
 
     .ftco-project .project {
         min-height: 240px;
+    }
+
+    .resume-wrap {
+        padding-left: 1rem;
     }
 }
