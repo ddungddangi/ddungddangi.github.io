@@ -10003,3 +10003,8 @@ a:hover {
         padding-left: 1rem;
     }
 }
+
+.award {
+    font-weight: 700;
+    color: #d4a017;
+}
