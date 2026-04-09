@@ -9672,3 +9672,181 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+/* =========================
+   Custom overrides for portfolio
+   ========================= */
+
+/* Hero */
+.hero-wrap .overlay {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-wrap .text .subheading,
+.hero-wrap .text h1,
+.hero-wrap .text h2,
+.hero-wrap .text p {
+    color: #fff !important;
+}
+
+.hero-wrap .text h1,
+.hero-wrap .text h2,
+.hero-wrap .text p {
+    text-shadow: 0 3px 12px rgba(0, 0, 0, 0.35);
+}
+
+.hero-wrap .text p {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 500;
+}
+
+/* About */
+#about-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+#about-section .img-about {
+    width: 100%;
+    justify-content: center;
+}
+
+#about-section .img-about .img {
+    width: 260px !important;
+    height: 340px !important;
+    border-radius: 10px;
+    background-size: cover !important;
+    background-position: center center !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+#about-section .heading-section p {
+    color: #444;
+    line-height: 1.9;
+}
+
+#about-section .about-info li span:first-child {
+    min-width: 110px;
+    font-weight: 600;
+    color: #000;
+}
+
+#about-section .about-info li span:last-child {
+    color: #555;
+}
+
+/* Remove visual gap after About */
+#resume-section {
+    padding-top: 4rem;
+}
+
+/* Resume section */
+#resume-section .heading {
+    margin-bottom: 2rem;
+}
+
+.resume-wrap {
+    border-left: 3px solid #3f66f2;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.resume-wrap .text h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.resume-wrap .position {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #3f66f2;
+    font-weight: 600;
+}
+
+.resume-wrap .date {
+    font-weight: 600;
+    color: #666;
+}
+
+/* Project buttons */
+.btn.btn-outline-secondary.btn-sm {
+    margin-right: 0.35rem;
+    margin-bottom: 0.35rem;
+    border-radius: 999px;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.8rem;
+}
+
+/* Project gallery */
+.ftco-project .project {
+    min-height: 320px;
+    background-size: cover !important;
+    background-position: center center !important;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ftco-project .project:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
+}
+
+.ftco-project .project .overlay {
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.ftco-project .project .text h3,
+.ftco-project .project .text span {
+    color: #fff !important;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+/* Notion section */
+#notion-section {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background: #fafafa;
+}
+
+#notion-section .heading-section p {
+    color: #555;
+}
+
+/* Contact cards */
+.contact-info .box {
+    border-radius: 10px;
+}
+
+.contact-info .box h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.contact-info .box p,
+.contact-info .box a {
+    color: #555;
+    word-break: break-word;
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+    #about-section .img-about .img {
+        width: 220px !important;
+        height: 290px !important;
+        margin-bottom: 2rem;
+    }
+
+    .hero-wrap .text h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-wrap .text h2 {
+        font-size: 1.2rem;
+    }
+
+    .ftco-project .project {
+        min-height: 240px;
+    }
+}
